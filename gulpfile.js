@@ -17,7 +17,7 @@ gulp.task('run', function () {
 });
 
 // Build the application
-gulp.task('package', function(){
+gulp.task('build', function(){
     packager(build_options,function done_callback(err, appPaths){
         if(err){
             console.log(err);
