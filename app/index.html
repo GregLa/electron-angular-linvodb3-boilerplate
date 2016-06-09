@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Electron Angular LinvoDB3 Boilerplate</title>
+    <!-- build:css assets/css/app.css -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <!-- endbuild -->
+</head>
+<body ng-app="app" ng-controller="appController" ng-cloak>
+
+<h1>Electron Angular LinvoDB3 Boilerplate</h1>
+We are using node <script>document.write(process.versions.node)</script>,
+Chromium <script>document.write(process.versions.chrome)</script>,
+and Electron <script>document.write(process.versions.electron)</script>.
+<hr>
+<h3>Here is a list of text from your LinvoDB3 database which is persistent, managed with AngularJS of course ;)</h3>
+<div>
+    <input type="text" ng-model="note.text" placeholder="Add a text in your database..."/>
+    <button ng-click="addNote()">Add it !</button>
+</div>
+
+<div>
+    <ul>
+        <li ng-repeat="note in notes">
+            {{ note.text }} <button ng-click="deleteNote(note._id)">Delete it!</button>
+        </li>
+    </ul>
+</div>
+
+<div ng-if="notes.length > 0">Try to restart the application, this list will still be there ;)</div>
+
+<!-- build:js scripts/vendor.js -->
+<script src="bower_components/q/q.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<!-- endbuild -->
+
+<!-- build:app scripts/app.js -->
+<script src="scripts/database.js"></script>
+<script src="scripts/app.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>

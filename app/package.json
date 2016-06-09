@@ -1,0 +1,14 @@
+{
+  "name": "electron-angular-linvodb3-boilerplate",
+  "version": "0.0.1",
+  "main": "main.js",
+  "author": {
+    "name": "Gr�goire Lagoutte",
+    "email": "gregoire.lagoutte@gmail.com"
+  },
+  "dependencies": {
+    "bower": "^1.7.9",
+    "level-js": "^2.2.4",
+    "linvodb3": "^3.19.0"
+  }
+}
