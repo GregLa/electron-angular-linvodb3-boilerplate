@@ -2,6 +2,9 @@
   "name": "electron-angular-linvodb3-boilerplate",
   "description": "Start an Electron project with LinvoDB3 persistent database and AngularJS Framework.",
   "version": "0.0.1",
+  "scripts": {
+    "install": "cd app && npm install && bower install"
+  },
   "devDependencies": {
     "electron-packager": "^7.0.3",
     "electron-prebuilt": "^1.2.1",
